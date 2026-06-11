@@ -1,5 +1,5 @@
 body {
-    background-color: yellow;
+    background-color: lightgray;
 }
 
 h1,
@@ -13,4 +13,33 @@ img {
     height: 300px;
     display: block;
     margin: auto;
+}
+.tarjetas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tarjeta {
+    background: white;
+    padding: 20px;
+}
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+@media (min-width: 768px) {
+
+    .tarjetas {
+        flex-direction: row;
+    }
+
+}
+@media (min-width: 1024px) {
+
+    .contenedor-grid {
+        grid-template-columns: 3fr 1fr;
+    }
+
 }
